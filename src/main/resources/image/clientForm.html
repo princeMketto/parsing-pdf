@@ -1,0 +1,132 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Important: you'll only need one of the Bootcards CSS files below for every platform -->
+
+<!-- Bootcards CSS for iOS: -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/css/bootcards-ios.min.css">
+
+<!-- Bootcards CSS for Android: -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/css/bootcards-android.min.css">
+
+<!-- Bootcards CSS for desktop: -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/css/bootcards-desktop.min.css">
+
+<!-- Bootstrap and Bootcards JS -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
+<style>
+    body {
+        padding-top: 0.2em;
+    }
+    .table-bordered td, .table-bordered th  {
+        border: none !important;
+        border-right: solid 1px #ccc !important;
+    }
+
+    .quant {
+        font-size: 60px;
+    }
+
+    .all-left-component {
+        padding-left: 1%;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .panel {
+        background-color: transparent;
+        border: 0;
+    }
+</style>
+<body>
+
+<div class="container-fluid" xmlns:th="http://www.thymeleaf.org"
+     th:with="itemRequisitionService=${applicationContext.getBean('itemRequisitionService')}">
+    <div class="row">
+        <div class="col-md-offset-0 col-md-12">
+            <div class="panel panel-default bootcards-file">
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th width="20%">Period</th>
+                                <td>6 Months</td>
+                            </tr>
+                            <tr>
+                                <th width="20%">Basic</th>
+                                <td>1 Million (Tsh)</td>
+                            </tr>
+                            <tr>
+                                <th width="20%">Other Income</th>
+                                <td>350,000/</td>
+                            </tr>
+                            <tr>
+                                <th width="20%">Gross Amount</th>
+                                <td>1,000,000/- TShs (One Million)</td>
+                            </tr>
+                            <tr>
+                                <th width="20%">Total Deduction</th>
+                                <td>100,000/- TShs( One hundred Thousand)</td>
+                            </tr>
+                            <tr>
+                                <th width="20%">Actual Amount</th>
+                                <td>900,000/- TShs (Nine hundreds thousands)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <h4><strong ><center>Other Income</center></strong></h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <th width="20%">Transport Allowance</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">Action Allowance</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">Communication Allowance</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">TOTAL</th>
+                            <td>600,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="row">
+                    <h4><strong ><center>Deduction</center></strong></h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <th width="20%">PAYE</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">SDL</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">Discipline</th>
+                            <td>200,000</td>
+                        </tr>
+                        <tr>
+                            <th width="20%">TOTAL</th>
+                            <td>600,000</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
